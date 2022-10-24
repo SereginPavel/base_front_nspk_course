@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Книга контактов</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/reset-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/Group 10.png">
+    <title>Форма добавения контакта</title>
 
-    <body>
-        <header>
-            <h1>Contact Profile</h1>
-        </header>
+</head>
 
-        <hr>
-        John Rambo
-        <hr>
+<body>
 
-        <form>
-            <div>
-                <label>First name</label><br>
-                <input type="text" value="John"><br>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-header_label">
+                    Create new contact
+                </div>
+                <div class="panel-header_button_cancel">
+                    <button><img src="../img/cancel.svg" alt=""></button>
+                </div>
             </div>
-            <div>
-                <label>Last name</label><br>
-                <input type="text" value="Rambo"><br>
+            <div class="panel-content">
+                <div class="container">
+                    <div class="row">
+                        <form action="" class="form">
+                            <div class="field">
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                            <div class="field">
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname" name="lname">
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone number</label>
+                                <input type="text" id="phone" name="phone">
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="field">
+                                <label for="compN">Company name</label>
+                                <input type="text" id="compN" name="compN">
+                            </div>
+                            <div class="field">
+                                <label for="jobT">Job Title</label>
+                                <input type="text" id="jobT" name="jobT">
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form_buttons">
+                            <a href="./table.html"><button class="button_cancel">Cancel</button></a>
+                            <a href="./table.html"><button class="button_save">Save Contact</button></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div>
-                <label>Phone number</label><br>
-                <input type="text" value="+7 (999) 999-99-99"><br>
-            </div>
-            <div>
-                <label>Email</label><br>
-                <input type="text" value="johnrambo@gmail.com"><br>
-            </div>
-            <div>
-                <label>Company name</label><br>
-                <input type="text" value="Russia Army"><br>
-            </div>
-            <div>
-                <label>Job Title</label><br>
-                <input type="text" value="Soldier"><br><br>
-            </div>
-            <div>
-                <button>Back</button>
-                <button>Edit</button>
-            </div>
-        </form>
-        <br>
-        <button onclick="window.location.href ='../html/index.html'">Cancel</button>
-    </body>
+        </div>
+
+    </div>
+
+
+
+</body>
+
 </html>
