@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Книга контактов</title>
-        <style type="text/css">
-            TD, TH {
-                border-bottom: 1px solid black; /* Линия снизу */
-            }
-        </style>
-    </head>
 
-    <body>
-        <header>
-            <h1>Contacts</h1>
-            <span>(68 Contacts)</span>
-        
-        </header>
+<head>
+    <meta charset="utf-8">
+    <link href="../css/reset-style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap">
+    <title>Таблица контактов</title>
+</head>
 
-        <hr>
-            <a href="../html/table.html">All 68</a>
-            <a href="../html/index.html">Favorits 0</a>
-            <button onclick="window.location.href ='../html/form.html'">+ Add new Contact</button>
-        <hr>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <span class="contacts_label">Contacts</span>
+                <span class="contacts_count_label">(68 Contacts)</span>
+            </div>
+            <div class="search">
+                <img src="../img/search.png" alt="Search">
+                <span class="search_label">Search</span>
+            </div>
+        </div>
 
-        <table cellspacing="0">
-            <tr>
-                <th>Client Name</th>
-                <th>Client Name</th>
-                <th>Client Name</th>
-                <th>Client Name</th>
-                <th>Client Name</th>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
-            <tr>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-                <td>Client item</td>
-            </tr>
+
+    </header>
+
+    <hr>
+    <div class="tabs">
+        <div>
+            <a class="tab_all" href="../html/table.html">All 68</a>
+            <a class="tab_favorite" href="../html/index.html">Favorites 0</a>
+        </div>
+        <div>
+            <button class="button_add_new_contact" onclick="window.location.href ='../html/form.html'">+ Add new contact</button>
+        </div>
+    </div>
+    <hr>
+    <div class="contacts_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Client Name</th>
+                    <th>Client Name</th>
+                    <th>Client Name</th>
+                    <th>Client Name</th>
+                    <th>Client Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+                <tr>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                    <td>Client item</td>
+                </tr>
+            </tbody>
         </table>
-    </body>
+    </div>
+</body>
+
 </html>
