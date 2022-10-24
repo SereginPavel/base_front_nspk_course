@@ -3,95 +3,80 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.header {
+
+.head {
     display: flex;
-    align-items: center;
-    height: 90px;
-    margin: 0 70px;
     justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 70px;
 }
 
 .contacts_label {
+    color: black;
+    display: inline;
     color: #000070;
+    justify-content: start;
     font-size: 32px;
-    line-height: 39px;
-    font-weight: 700;
 }
 
-.contacts_count_label {
+.contacts_count {
     color: #8F8F8F;
-    margin-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    padding-left: 8px;
 }
 
-.search {
-    display: flex;
-    color: rgba(143, 143, 143, 0.5);
+.head div .search {
+    justify-content: end;
+    display: inline;
 }
 
-.search_label {
-    margin-left: 5px;
+.tabs a {
+    color: #000070;
+    margin: 0 12px 0 0;
+    cursor: pointer;
 }
 
 .tabs {
     display: flex;
     align-items: center;
-    height: 53px;
-    margin: 0 70px;
-    justify-content: space-between;
-}
-
-.tab_all {
-    color: #000070;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.tab_favorite {
-    color: rgba(143, 143, 143, 0.5);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 10px;
-}
-
-.button_add_new_contact {
-    width: 234px;
     height: 38px;
-    font-size: 16px;
-    font-weight: 600;
-    color:#FFFFFF;
-    background: #5555A8;
-    border-radius: 10px;
-    border-width: 0px;
 }
 
+.tabs-data {
+    margin: 0 70px;
+    align-items: center;
+    display: flex;
+}
 
-.contacts_table {
+.contacts {
+    height: calc(100% - 144px);
     display: flex;
     justify-content: center;
-    padding: 32px 70px;
+    align-items: center;
 }
 
-HR {
-    border-top: 1px solid rgba(143, 143, 143, 0.5);
+.contacts_info {
+    text-align: center;
 }
 
-TABLE {
-    border-collapse: collapse;
-    width: -webkit-fill-available;
+.contacts_empty-text {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-TR {
-    border-bottom: 1px solid rgb(87, 84, 84);
-
+.contacts_empty-button button {
+    width: 250px;
+    padding: 8px;
+    background-color: #5555A8;
+    color: white;
+    border-radius: 10px;
+    border-color: #5555A8;
+    border-width: 0px;
+    cursor: pointer;
 }
 
-TD, TH {
-    height: 50px;
-    text-align: left;
-    color:#000070;
-    padding-left: 30px;
+.mt-12 {
+    margin-top: 12px;
 }
-

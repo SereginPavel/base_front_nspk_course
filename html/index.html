@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Книга контактов</title>
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/reset-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="icon" href="../img/Group 10.png">
+    <title>Книга контактов</title>
 
-    <body>
-        <header>
-            <h1>Contacts</h1>
-            <span>(68 Contacts)</span>
-        </header>
+</head>
 
-        <hr>
-        <a href="../html/table.html">All 68</a>
-        <a href="../html/index.html">Favorits 0</a>
-        <hr>
+<body>
+    <header class="head">
+        <div class="contacts_head">
+            <span class="contacts_label">Contacts</h1>
+                <span class="contacts_count">(0 Contacts)</span>
+        </div>
+        <div class="search">
+            <img src="../img/Search.png" alt="поиск">
+        </div>
+    </header>
 
-        <div>
-            <img src="../img/emptyContacts.svg" alt="No Contacts">
-            <div>No Contacts</div>
-            <button onclick="window.location.href ='../html/form.html'">+ Add new Contact</button>
+    <hr>
+    <div class="tabs-container">
+
+        <div class="tabs-data">
+            <div class="tabs">
+                <a href="./table.html">All 3</a>
+                <a href="index.html">Favorites</a>
+            </div>
         </div>
 
-    </body>
+    </div>
+    <hr>
+
+
+    <div class="contacts">
+        <div>
+            <div>
+                <img src="../img/emptyContacts.svg" alt="Нет контактов">
+            </div>
+            <div class="contacts_info">
+                <div class="contacts_empty-text">No contacts</div>
+                <div class="contacts_empty-button mt-12">
+                    <a href="./form.html"><button>+ Add new contact</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>
