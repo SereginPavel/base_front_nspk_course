@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="http://example.com/favicon.png">
-    <link rel="icon" href="./img/Group 10.png">
+    <link rel="icon" href="../img/Group 10.png">
+
     <script src="../js/edit-form.js"></script>
     <title>Книга контактов</title>
 
@@ -36,43 +37,46 @@
 
     <div class="edit-content">
         <div class="container">
-            <div class="row">
-                <form action="" class="form-edit">
+            <form class="form-edit">
+                <div class="row">
                     <div class="field">
                         <label for="fname">First name</label>
-                        <input type="text" id="fname" name="fname" value="John" />
+                        <input type="text" id="fname" name="fname">
                     </div>
                     <div class="field">
                         <label for="lname">Last name</label>
-                        <input type="text" id="lname" name="lname" value="Rambo">
+                        <input type="text" id="lname" name="lname">
                     </div>
                     <div class="field">
                         <label for="phone">Phone number</label>
-                        <input type="text" id="phone" name="phone" value="+7 (999) 999-99-99">
+                        <input type="text" id="phone" name="phone">
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" value="johnrambo@gmail.com">
+                        <input type="text" id="email" name="email">
                     </div>
                     <div class="field">
                         <label for="compN">Company name</label>
-                        <input type="text" id="compN" name="compN" value="U.S.A. Army">
+                        <input type="text" id="compN" name="compN">
                     </div>
                     <div class="field">
                         <label for="jobT">Job Title</label>
-                        <input type="text" id="jobT" name="jobT" value="Soldier">
+                        <input type="text" id="jobT" name="jobT">
                     </div>
-                </form>
-            </div>
 
-
-            <div class="row">
-                <div class="form-edit_buttons">
-                    <a href="./table.html"><button class="button_back">Back</button></a>
-                    <a href="./table.html"><button class="button_edit">Edit</button></a>
                 </div>
-            </div>
 
+                <div class="row">
+                    <div class="form-edit_buttons">
+                        <button class="button_back" type="reset" onclick="window.location='./table.html'">Back</button>
+                        <button class="button_edit" type="submit">Edit</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="hide">
+                <h3>Форма успешно отправлена</h3>
+            </div>
         </div>
     </div>
 

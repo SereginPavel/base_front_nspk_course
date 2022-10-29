@@ -32,3 +32,38 @@ td {
 .contacts_button_edit {
     text-align: right;
 }
+
+
+.bubbling-container {
+    padding: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.bubbling-container p {
+    display: block;
+    position: relative;
+    padding: 5px;
+    border: 1px solid green;
+}
+
+.bubbling-container span {
+    display: block;
+    position: relative;
+    padding: 5px;
+    border: 1px solid red;
+    margin-top: 5px;
+}
+
+.user-container {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.user-container__remove-btn-wrapper {
+    text-align: right;
+    margin-top: 20px;
+}
