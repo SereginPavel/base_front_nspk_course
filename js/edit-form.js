@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        form.className ='hide'
-        sendSuccessBlock.className = '';
+        form.classList.add('hide');
+        sendSuccessBlock.classList.remove('hide');
     });
 })
 
