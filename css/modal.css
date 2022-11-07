@@ -1,3 +1,4 @@
+/*Форма*/
 .container {
     display: flex;
     flex-direction: column;
@@ -112,10 +113,6 @@ input:focus {
     cursor: pointer;
 }
 
-.hide {
-    display: none;
-}
-
 .form-edit {
     width: 600px;
 }
@@ -164,4 +161,78 @@ input:focus {
 .edit-content {
     margin-left: 70px;
     margin-top: 70px;
+}
+
+/*Модальник*/
+.modal-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 1;
+    transition: all 0.2s linear !important;
+}
+
+.modal-overlay_hidden {
+    opacity: 0;
+}
+
+.container_modal {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1050;
+    transition: all 0.2s ease !important;
+
+}
+
+.container_modal_hidden {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.container_modal .panel {
+    margin-top: 0;
+}
+
+.container_modal .panel-header_button_cancel {
+    width: 80px;
+    cursor: pointer;
+    position: relative;
+}
+
+.container_modal .panel-header_button_cancel::before,
+.container_modal .panel-header_button_cancel::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30%;
+    margin: 50% 35%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg) translate(0, -50%);
+    outline: none !important;
+    transition: all 0.15s linear;
+}
+
+.container_modal .panel-header_button_cancel::after {
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.container_modal .panel-header_button_cancel:hover::before,
+.container_modal .panel-header_button_cancel:hover::after {
+    opacity: 0.8;
+}
+
+.container_modal .panel-content {
+    background-color: #fff;
+}
+
+.container_modal .button_save {
+    margin-left: 15px;
 }
