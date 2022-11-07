@@ -131,8 +131,6 @@ const Modal = {
         this.removeEventListeners();
         document.body.removeChild(this.overlay);
         document.body.removeChild(this.modalContainer);
-        this.modalContainer.classList.add('container_modal_hidden');
-        this.overlay.classList.add('modal-overlay_hidden');
 
         setTimeout(() => {
             
