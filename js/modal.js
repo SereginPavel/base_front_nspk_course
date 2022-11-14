@@ -129,11 +129,11 @@ const Modal = {
 
     close(type) {
         this.removeEventListeners();
-        document.body.removeChild(this.overlay);
-        document.body.removeChild(this.modalContainer);
+
 
         setTimeout(() => {
-            
+            document.body.removeChild(this.overlay);
+            document.body.removeChild(this.modalContainer);
         }, 200);
 
         if (type === 'submit') {
