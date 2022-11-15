@@ -1,0 +1,74 @@
+
+
+.edit-content {
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+form {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+
+}
+
+.form_buttons {
+    margin-top: 24px;
+    float: right;
+}
+
+.form-edit_buttons .button_edit {
+    margin-top: 12px;
+    width: 80px;
+    padding: 8px;
+    background-color: #5555A8;
+    color: white;
+    border-radius: 10px;
+    border-color: #5555A8;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.form-edit_buttons .button_back {
+    width: 80px;
+    text-align: center;
+    margin-right: 12px;
+    padding: 8px;
+    color: #5555A8;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #5555A8;
+    cursor: pointer;
+}
+
+.form-edit {
+    width: 600px;
+}
+
+.form-edit_buttons {
+    float: left;
+}
+
+form label {
+    font-size: 16px;
+    margin: 12px 0;
+    font-weight: 500;
+    color: #9F9F9F;
+}
+
+form input {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border-width: 1px;
+    border-color: #DCDCDC80;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form .field {
+    padding: 16px 0;
+}
