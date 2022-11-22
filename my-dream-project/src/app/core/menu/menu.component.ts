@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,17 +8,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  @Input() totalUsers: number | undefined;
-  @Output() namePage: EventEmitter<string> = new EventEmitter();
+  public total: number | undefined;
 
-  constructor() { }
+  constructor(public userService: UsersService) { }
 
   ngOnInit(): void {
-    this.namePage.emit('ADD_CONTACT')
-  }
-
-  public openPage( namePage: string ) {
-    this.namePage.emit(namePage)
+    setInterval( () => { this.total = this.userService.getUsers().length }, 1000)
   }
 
 }

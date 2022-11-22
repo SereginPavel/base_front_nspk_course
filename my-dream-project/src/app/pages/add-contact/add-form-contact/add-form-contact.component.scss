@@ -63,11 +63,9 @@ form {
 }
 
 .form_buttons .button_save {
-    margin-top: 12px;
-    width: 152px;
+    width: 130px;
     padding: 8px;
-    padding-right: 0;
-    background-color: #5555A8;
+    margin-left: 15px;
     color: white;
     border-radius: 10px;
     border-color: #5555A8;
@@ -75,9 +73,16 @@ form {
     cursor: pointer;
 }
 
+.disable_baground {
+    background-color: #adadeb;
+}
+
+.enable_baground {
+    background-color: #5555A8;
+}
+
 .form_buttons .button_cancel {
-    width: 75px;
-    text-align: center;
+    width: 130px;
     padding: 8px;
     color: #5555A8;
     background-color: white;

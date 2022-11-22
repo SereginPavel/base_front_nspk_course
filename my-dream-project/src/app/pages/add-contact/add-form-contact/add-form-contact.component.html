@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="panel">
+        <div class="panel-header">
+            <div class="panel-header_label">
+                Новый контакт
+            </div>
+            <div class="panel-header_button_cancel">
+                <button routerLink="/"><img src="../../../assets/img/cancel.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="panel-content">
+            <div class="container">
+                <div class="row">
+                    <form action="" class="form" [formGroup]="form">
+                        <div class="field">
+                            <label for="fname">Имя</label>
+                            <input formControlName="username" type="text">
+                        </div>
+                        <div class="field">
+                            <label for="lname">Телефон</label>
+                            <input formControlName="phone" type="text">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Почта</label>
+                            <input formControlName="email" type="text">
+                        </div>
+                        <div class="field">
+                            <label for="email">Сайт</label>
+                            <input formControlName="website" type="text">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="row">
+                    <div class="form_buttons">
+                        <button class="button_cancel" routerLink="/">Отмена</button>
+                        <button class="button_save" (click)="addContact()" [disabled]="!isValid()">Добавить</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
