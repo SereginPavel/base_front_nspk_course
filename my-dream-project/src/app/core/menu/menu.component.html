@@ -2,8 +2,8 @@
 
     <div class="tabs-data">
         <div class="tabs">
-            <a href="./table.html">All 3</a>
-            <a href="index.html">Favorites</a>
+            <div class="tabs-button" (click)="openPage('ADD_CONTACT')">Добавить контакт</div>
+            <div class="tabs-button" (click)="openPage('LIST_CONTACT')">Контакты({{ totalUsers }})</div>
         </div>
     </div>
 

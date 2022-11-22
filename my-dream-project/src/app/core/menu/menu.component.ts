@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @Input() totalUsers: number | undefined;
+  @Output() namePage: EventEmitter<string> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.namePage.emit('ADD_CONTACT')
+  }
+
+  public openPage( namePage: string ) {
+    this.namePage.emit(namePage)
   }
 
 }
