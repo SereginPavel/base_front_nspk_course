@@ -9,6 +9,12 @@ table {
     padding: 24px 70px;
 }
 
+.edit_contacts {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
 tr {
     border-bottom: 1px solid #ccc;
 }
@@ -23,3 +29,4 @@ th {
 td {
     padding: 20px;
 }
+

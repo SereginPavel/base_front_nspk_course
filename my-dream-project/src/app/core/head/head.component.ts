@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-head',
@@ -7,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeadComponent implements OnInit {
 
-  @Input() totalUsers: number | undefined;
+  public total: number | undefined;
 
-  constructor() { }
+  constructor(public userService: UsersService) { }
 
   ngOnInit(): void {
+    setInterval( () => { this.total = this.userService.getUsers().length }, 1000)
   }
 
 }

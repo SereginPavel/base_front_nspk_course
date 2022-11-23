@@ -1,9 +1,6 @@
-<app-head [totalUsers]="users.length"></app-head>
+<app-head></app-head>
 <hr>
-<app-menu (namePage)="namePage = $event" [totalUsers]="users.length"></app-menu>
+<app-menu></app-menu>
 <hr>
 
-<app-contacts>
-    <app-add-contact *ngIf="namePage === 'ADD_CONTACT'"></app-add-contact>
-    <app-list-contact *ngIf="namePage === 'LIST_CONTACT'" [users]="users"></app-list-contact>
-</app-contacts>
+<router-outlet></router-outlet>

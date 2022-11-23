@@ -14,16 +14,15 @@ form {
 
 }
 
-.form_buttons {
+.form-edit_buttons {
     margin-top: 24px;
     float: right;
 }
 
 .form-edit_buttons .button_edit {
-    margin-top: 12px;
-    width: 80px;
+    width: 130px;
     padding: 8px;
-    background-color: #5555A8;
+    margin-left: 15px;
     color: white;
     border-radius: 10px;
     border-color: #5555A8;
@@ -31,10 +30,16 @@ form {
     cursor: pointer;
 }
 
+.disable_baground {
+    background-color: #adadeb;
+}
+
+.enable_baground {
+    background-color: #5555A8;
+}
+
 .form-edit_buttons .button_back {
-    width: 80px;
-    text-align: center;
-    margin-right: 12px;
+    width: 130px;
     padding: 8px;
     color: #5555A8;
     background-color: white;

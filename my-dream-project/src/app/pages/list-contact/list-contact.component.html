@@ -15,8 +15,11 @@
                 <td>{{ user.email }}</td>
                 <td>{{ user.phone }}</td>
                 <td>{{ user.website }}</td>
-                <td class="contacts_button_edit">
-                    <img src="../../../assets/img/edit.svg" alt=""></td>
+                <td class="edit_contacts">
+                        <routerLink routerLink="/list-contact/edit-contact/{{ user.id }}">
+                        <img src="../../../assets/img/edit.svg" alt=""></routerLink>
+                        <img src="../../../assets/img/bucket.svg" alt="" (click)="deleteContact( user.id )">
+                </td>
             </tr>
         </tbody>
     </table>
